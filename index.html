@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedding with DS10✨</title>
+
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <h1>Embedded Analytics with DS10</h1>
+    <div>
+      <button id="showViz">Show Viz</button>
+      <button id="hideViz">Hide Viz</button>
+      <button id="exportPDF">Export PDF</button>
+      <button id="exportPPT">Export PPT</button>
+    </div>
+
+    <div class="rangefilters">
+      <input type="number" id="minValue" placeholder="min-value" />
+      <input type="number" id="maxValue" placeholder="max-value" />
+      <button id="applybutton">Apply</button>
+    </div>
+
+    <hr />
+    <div id="vizcontainer"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
